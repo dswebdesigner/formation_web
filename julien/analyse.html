@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- Title -->
+    <link rel="icon" href="img/favicon.ico">
+    <title>Analyse</title>
+  </head>
+
+  <body>
+
+    <div class="container"><!-- le container est un éléments globale qui souvent contient l'integralité du contenus -->
+      
+      <header>
+        <div id="titre"> <!--Le header est un haut de page ce sont les premiers elements que l'utilisateurs voit en dehors des menus (nav) -->
+          <h1 id="text" title="ceci est un titre!">Analyser !!!!</h1><!--Titre H1 (Le plus gros) -->
+        </div>
+          <p class="shadow">le temps d'y voir plus claire</p>
+      </header>
+
+      <section >
+        <h2 class="boxed">regardons la structure</h2>
+        <p>La Structure comporte plusieurs éléments html, que nous pouvons agencer comme nous le souhaitons.</p>
+      </section>
+
+      <section id="paralax">
+        <h2>Et maintenant le css!</h2>
+        <p>Si l'on regarde le css on découvre de nouvelle proprieté que l'on peut appliquer a nos éléments</p>
+        <article>
+          <img src="img/homer.jpeg">
+          <figcaption style="font-size: 40pt ;">Punaise du CSS!</figcaption>
+        </article>
+      </section>
+
+      <section id="You">
+        <!-- ici vos éléments html -->
+        <h2>Formulaire de contact</h2>
+        <p>Formulaire consacré aux messages que l'internaute peut envoyer au service client du site web</p>
+          <div class="container2">  
+            <form id="contact" method="post" action="php/mail.php">
+              <h3>CONTACT</h3>
+              <h4>Contactez-nous aujourd'hui<br>et vous aurez une réponse en moins de 24h !</h4>
+              <fieldset>
+                <input placeholder="Votre nom" type="text" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Votre Email" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Votre numéro de portable" type="tel" tabindex="3" required>
+              </fieldset>
+              <fieldset>
+                <label for="cars">Thème :</label>
+                <select id="Thème" name="Thème">
+                  <option value="Réclamation">Réclamation</option>
+                  <option value="Demande de rappel">Demande de rappel</option>
+                  <option value="Demande d'information">Demande d'information</option>
+                  <option value="Retour marchandise">Retour marchandise</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Votre message...." tabindex="5" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">ENVOYER</button>
+              </fieldset>
+            </form>
+          </div>
+
+      </section>
+
+    </div>
+
+  </body>
+
+</html>
